@@ -12,6 +12,11 @@ mod day_8;
 mod day_8_1;
 mod day_9;
 mod day_10;
+mod day_11;
+mod day_12;
+mod day_13;
+mod day_14;
+mod day_15;
 
 use crate::day_1::solve_the_puzzle_1_0;
 use crate::day_1::solve_the_puzzle_1_1;
@@ -33,6 +38,16 @@ use crate::day_9::solve_the_puzzle_9_0;
 use crate::day_9::solve_the_puzzle_9_1;
 use crate::day_10::solve_the_puzzle_10_0;
 use crate::day_10::solve_the_puzzle_10_1;
+use crate::day_11::solve_the_puzzle_11_0;
+use crate::day_11::solve_the_puzzle_11_1;
+use crate::day_12::solve_the_puzzle_12_0;
+use crate::day_12::solve_the_puzzle_12_1;
+use crate::day_13::solve_the_puzzle_13_0;
+use crate::day_13::solve_the_puzzle_13_1;
+use crate::day_14::solve_the_puzzle_14_0;
+use crate::day_14::solve_the_puzzle_14_1;
+use crate::day_15::solve_the_puzzle_15_0;
+use crate::day_15::solve_the_puzzle_15_1;
 
 fn main() {
     solve_the_puzzle_1_0();
@@ -55,6 +70,14 @@ fn main() {
     //solve_the_puzzle_9_1();
     solve_the_puzzle_10_0();
     solve_the_puzzle_10_1();
-
-    
+    solve_the_puzzle_11_0();
+    solve_the_puzzle_11_1();
+    solve_the_puzzle_12_0();
+    solve_the_puzzle_12_1();
+    solve_the_puzzle_13_0();
+    solve_the_puzzle_13_1();
+    solve_the_puzzle_14_0();
+    solve_the_puzzle_14_1().expect("error");
+    solve_the_puzzle_15_0();
+    solve_the_puzzle_15_1();
 }
