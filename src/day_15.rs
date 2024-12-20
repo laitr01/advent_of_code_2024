@@ -11,7 +11,7 @@ pub fn solve_the_puzzle_15_0() {
     match file::read_file("inputs/day_15_0.txt") {
         Err(err) => println!("Error: {:?}", err),
         Ok(contents) => {
-            println!("14.0: {:?}", q1 * q2 * q3 * q4);
+            //println!("14.0: {:?}", q1 * q2 * q3 * q4);
         }
     }
 }
@@ -94,10 +94,8 @@ impl FromStr for Robot {
         let velocity_x = vel_part[1].parse::<i32>().map_err(|_| "Invalid velocity_y".to_string())?;
 
         Ok(Robot {
-            x_pos,
-            y_pos,
-            velocity_x,
-            velocity_y,
+            x: x_pos,
+            y: y_pos,
         })
     }
 }
